@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { PageHeader } from '../components/PageHeader.jsx'
 import { Reveal } from '../components/Reveal.jsx'
 import { Modal } from '../components/Modal.jsx'
-import { img } from '../data/images.js'
+import { img, photo } from '../data/images.js'
 
 const news = [
   {
@@ -13,18 +13,18 @@ const news = [
     image: img.studentsGroup,
   },
   {
-    date: '15 June 2021',
-    title: 'Annual Sports Day',
-    desc: 'Students participated in various sports events with great enthusiasm and sportsmanship. From track races to team games, the day celebrated perseverance, teamwork and the spirit of fair play.',
-    excerpt: 'Students participated in various sports events.',
-    image: img.sports,
+    date: '16 August 2024',
+    title: 'Painting Activity',
+    desc: 'Our young artists brought colour and imagination to life during this year’s painting activity. From playful brushwork to thoughtful compositions, the students showed remarkable creativity and joy throughout the session.',
+    excerpt: 'Students showcased creativity in a vibrant painting activity.',
+    image: photo.paintingCover,
   },
   {
     date: '10 May 2021',
-    title: 'Science Exhibition',
-    desc: 'Incredible projects displayed by students at this year’s exhibition — from working models of renewable energy to creative biology displays, our young scientists shone bright.',
-    excerpt: 'Incredible projects displayed by students.',
-    image: img.scienceLab,
+    title: 'Art & Craft Showcase',
+    desc: 'Incredible artwork displayed by students at this year’s showcase — from colourful paintings to creative craft pieces, our young artists shone bright and filled the corridors with pride.',
+    excerpt: 'Incredible artwork displayed by students.',
+    image: photo.painting1,
   },
 ]
 

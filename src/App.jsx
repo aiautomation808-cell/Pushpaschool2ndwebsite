@@ -8,6 +8,7 @@ import Admissions from './pages/Admissions.jsx'
 import Gallery from './pages/Gallery.jsx'
 import News from './pages/News.jsx'
 import Contact from './pages/Contact.jsx'
+import SchoolMIS from './pages/SchoolMIS.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/school-mis" element={<SchoolMIS />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

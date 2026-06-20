@@ -1,6 +1,6 @@
 import { PageHeader } from '../components/PageHeader.jsx'
 import { Reveal } from '../components/Reveal.jsx'
-import { img, schoolContact } from '../data/images.js'
+import { img, schoolContact, photo } from '../data/images.js'
 
 const emblemSymbols = [
   { name: 'The Cross', desc: 'The Christian symbol for selfless love and sacrifice.' },
@@ -130,13 +130,18 @@ export default function About() {
             <div className="rounded-3xl bg-white p-8 md:p-12 ring-1 ring-slate-100 shadow-sm">
               <div className="grid gap-8 md:grid-cols-3 md:items-center">
                 <div className="md:col-span-1 text-center">
-                  <div className="mx-auto inline-flex h-32 w-32 items-center justify-center rounded-2xl bg-gradient-to-br from-primary-700 to-primary-950 text-white shadow-lg">
-                    <svg className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.4">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                    </svg>
+                  <div className="relative mx-auto h-56 w-48 overflow-hidden rounded-2xl bg-gradient-to-br from-primary-700 to-primary-950 shadow-lg ring-4 ring-white">
+                    <img
+                      src={photo.principalDesk}
+                      alt={`${schoolContact.principal}, Principal`}
+                      loading="lazy"
+                      className="h-full w-full object-cover"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary-950/90 to-transparent p-3">
+                      <h3 className="text-sm font-bold text-white">{schoolContact.principal}</h3>
+                      <p className="text-xs font-medium text-gold-300">Principal</p>
+                    </div>
                   </div>
-                  <h3 className="mt-4 text-lg font-bold text-slate-900">{schoolContact.principal}</h3>
-                  <p className="text-sm font-medium text-gold-600">Principal</p>
                 </div>
                 <div className="md:col-span-2">
                   <span className="text-sm font-semibold uppercase tracking-wider text-gold-600">From the Principal's Desk</span>

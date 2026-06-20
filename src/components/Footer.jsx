@@ -10,6 +10,7 @@ const quickLinks = [
   { to: '/gallery', label: 'Gallery' },
   { to: '/news', label: 'News & Events' },
   { to: '/contact', label: 'Contact' },
+  { to: '/school-mis', label: 'School MIS' },
 ]
 
 export function Footer() {

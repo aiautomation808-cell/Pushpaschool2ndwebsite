@@ -1,6 +1,18 @@
-// Centralized Unsplash image URLs and school contact data used across the site.
-// Contact details verified against the official site: https://www.pushpaschool.com/
+// Centralized image URLs and school contact data used across the site.
+// Real school photos are sourced from https://www.pushpaschool.com/
+// Contact details verified against the official site.
 
+// Real photos from pushpaschool.com (served from /public/photos)
+export const photo = {
+  principalDesk: '/photos/principal-desk.jpg',
+  paintingCover: '/photos/painting-cover.png',
+  painting1: '/photos/painting-1.png',
+  painting2: '/photos/painting-2.png',
+  painting3: '/photos/painting-3.png',
+  painting4: '/photos/painting-4.png',
+}
+
+// Complementary stock imagery (Unsplash) for sections without real photos yet.
 export const img = {
   heroSchool: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1920&q=80',
   campusAir: 'https://images.unsplash.com/photo-1560785496-3c9d27877182?auto=format&fit=crop&w=1920&q=80',
@@ -24,8 +36,15 @@ export const img = {
   contactCampus: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80',
 }
 
+// The MIS portal URL from the official site.
+export const misPortalUrl = 'http://119.81.222.115:1075/DefaultMIS1.aspx'
+
 export const galleryImages = [
-  { src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80', caption: 'School Building' },
+  { src: photo.paintingCover, full: photo.paintingCover, caption: 'Painting Activity' },
+  { src: photo.painting1, full: photo.painting1, caption: 'Painting Activity' },
+  { src: photo.painting2, full: photo.painting2, caption: 'Painting Activity' },
+  { src: photo.painting3, full: photo.painting3, caption: 'Painting Activity' },
+  { src: photo.painting4, full: photo.painting4, caption: 'Painting Activity' },
   { src: 'https://images.unsplash.com/photo-1509062522246-375597c274a1?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1509062522246-375597c274a1?auto=format&fit=crop&w=1600&q=80', caption: 'Students Studying' },
   { src: 'https://images.unsplash.com/photo-1497636144937-2999aedebf22?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1497636144937-2999aedebf22?auto=format&fit=crop&w=1600&q=80', caption: 'Classroom' },
   { src: 'https://images.unsplash.com/photo-1580582932707-34b093c5243a?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1580582932707-34b093c5243a?auto=format&fit=crop&w=1600&q=80', caption: 'Library' },
@@ -39,7 +58,6 @@ export const galleryImages = [
   { src: 'https://images.unsplash.com/photo-1501504905252-473c4bbcd43e?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1501504905252-473c4bbcd43e?auto=format&fit=crop&w=1600&q=80', caption: 'School Bus' },
   { src: 'https://images.unsplash.com/photo-1525921429634-9ab036428b9d?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1525921429634-9ab036428b9d?auto=format&fit=crop&w=1600&q=80', caption: 'Sports' },
   { src: 'https://images.unsplash.com/photo-1510510804060-377933c62751?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1510510804060-377933c62751?auto=format&fit=crop&w=1600&q=80', caption: 'Art Class' },
-  { src: 'https://images.unsplash.com/photo-1509062522246-375597c274a1?auto=format&fit=crop&w=900&q=80', full: 'https://images.unsplash.com/photo-1509062522246-375597c274a1?auto=format&fit=crop&w=1600&q=80', caption: 'Music Class' },
 ]
 
 export const schoolContact = {
