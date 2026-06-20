@@ -21,7 +21,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3">
-              <Logo className="h-11 w-11" />
+              <Logo className="h-11 w-11" variant="footer" />
               <div className="flex flex-col leading-tight">
                 <span className="font-bold text-base lg:text-lg text-white">{schoolContact.shortName}</span>
                 <span className="text-xs font-medium tracking-wider uppercase text-gold-400">Love and Service</span>
