@@ -63,21 +63,29 @@ export default function SchoolMIS() {
                 to fees and communication. Students and parents can track progress, while staff can manage
                 records efficiently, all through a single secure portal maintained by the school.
               </p>
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col gap-3">
                 <a
                   href={misPortalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-primary-700 px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary-800 hover:-translate-y-0.5 active:scale-95"
+                  className="inline-flex items-center gap-2 rounded-xl bg-primary-700 px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary-800 hover:-translate-y-0.5 active:scale-95 w-fit"
                 >
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5m5 0v5" />
                   </svg>
                   Open School MIS Portal
                 </a>
+                <div className="flex items-start gap-2 rounded-lg bg-amber-50 border border-amber-200 px-4 py-3 max-w-sm">
+                  <svg className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+                  </svg>
+                  <p className="text-xs text-amber-800 leading-relaxed">
+                    The portal runs on an HTTP address. If your browser blocks it, copy the link and paste it directly into a new tab: <span className="font-mono break-all select-all">{misPortalUrl}</span>
+                  </p>
+                </div>
               </div>
               <p className="mt-3 text-xs text-slate-500">
-                You will be redirected to the official portal. Please use the login credentials issued by the school office.
+                Please use the login credentials issued by the school office to sign in.
               </p>
             </Reveal>
 
