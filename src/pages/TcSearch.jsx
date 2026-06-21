@@ -3,7 +3,7 @@ import { PageHeader } from '../components/PageHeader.jsx'
 import { Reveal } from '../components/Reveal.jsx'
 import { img } from '../data/images.js'
 
-const CSV_URL = 'https://docs.google.com/spreadsheets/d/1gLQH-9ZRc9bVwyut1STcN3xyT5xCYYHDR_fOal0eGt0/export?format=csv'
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/1gLQH-9ZRc9bVwyut1STcN3xyT5xCYYHDR_fOaI0eGt0/export?format=csv'
 
 function parseCsv(text) {
   const rows = []
