@@ -9,6 +9,7 @@ const navItems = [
   { to: '/admissions', label: 'Admissions' },
   { to: '/gallery', label: 'Gallery' },
   { to: '/news', label: 'News & Events' },
+  { to: '/cbse-info', label: 'CBSE Info' },
   { to: '/contact', label: 'Contact' },
   { to: '/school-mis', label: 'School MIS' },
   { to: '/tc-search', label: 'TC Search' },

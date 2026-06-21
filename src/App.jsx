@@ -10,6 +10,10 @@ import News from './pages/News.jsx'
 import Contact from './pages/Contact.jsx'
 import SchoolMIS from './pages/SchoolMIS.jsx'
 import TcSearch from './pages/TcSearch.jsx'
+import CbseInfo from './pages/CbseInfo.jsx'
+import MandatoryDisclosure from './pages/MandatoryDisclosure.jsx'
+import Committee from './pages/Committee.jsx'
+import StarsOfPushpa from './pages/StarsOfPushpa.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -27,6 +31,10 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/school-mis" element={<SchoolMIS />} />
           <Route path="/tc-search" element={<TcSearch />} />
+          <Route path="/cbse-info" element={<CbseInfo />} />
+          <Route path="/mandatory-disclosure" element={<MandatoryDisclosure />} />
+          <Route path="/committee" element={<Committee />} />
+          <Route path="/stars-of-pushpa" element={<StarsOfPushpa />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
