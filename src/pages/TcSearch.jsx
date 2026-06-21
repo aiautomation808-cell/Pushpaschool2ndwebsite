@@ -82,16 +82,23 @@ export default function TcSearch() {
       }
 
       const header = rows[0].map((h) => h.trim().toLowerCase())
-      const colIndex = (name) => {
-        const keys = name.toLowerCase().split('/')
-        return header.findIndex((h) => keys.some((k) => h.includes(k)))
-      }
 
-      const admissionIdx = colIndex('admission')
-      const studentIdx = colIndex('student name/name')
-      const fatherIdx = colIndex("father's name/father/father name")
-      const tcIdx = colIndex('tc number/tc')
-      const issueIdx = colIndex('issue date/date')
+      const COLUMN_NAMES = [
+        'admission no.',
+        'student name',
+        'father name',
+        'tc number',
+        'issue date',
+      ]
+
+      const indices = COLUMN_NAMES.map((name) => {
+        const idx = header.indexOf(name)
+        if (idx === -1) {
+          throw new Error(`Required column "${name}" not found in the sheet.`)
+        }
+        return idx
+      })
+      const [admissionIdx, studentIdx, fatherIdx, tcIdx, issueIdx] = indices
 
       const match = rows.slice(1).find((r) => {
         const val = (r[admissionIdx] || '').trim().toLowerCase()
