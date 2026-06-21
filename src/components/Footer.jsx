@@ -11,6 +11,7 @@ const quickLinks = [
   { to: '/news', label: 'News & Events' },
   { to: '/contact', label: 'Contact' },
   { to: '/school-mis', label: 'School MIS' },
+  { to: '/tc-search', label: 'TC Search' },
 ]
 
 export function Footer() {
