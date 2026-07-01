@@ -20,30 +20,33 @@ const quickLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <footer className="mesh-bg-dark text-cream-100 relative overflow-hidden">
+      {/* Decorative gold line */}
+      <div className="h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3">
               <Logo className="h-11 w-11" variant="footer" />
               <div className="flex flex-col leading-tight">
-                <span className="font-bold text-base lg:text-lg text-white">{schoolContact.shortName}</span>
-                <span className="text-xs font-medium tracking-wider uppercase text-gold-400">Love and Service</span>
+                <span className="font-serif font-bold text-lg text-white">{schoolContact.shortName}</span>
+                <span className="text-xs font-medium tracking-[0.2em] uppercase text-gold-400">Love and Service</span>
               </div>
             </Link>
-            <p className="mt-4 text-sm text-slate-400 leading-relaxed">
+            <p className="mt-5 text-sm text-cream-100/60 leading-relaxed font-sans">
               Pushpa Senior Secondary School, Ashta — a legacy of value-based education since 1966.
             </p>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">Quick Links</h3>
-            <ul className="mt-4 space-y-2.5">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400 font-sans">Quick Links</h3>
+            <ul className="mt-5 space-y-2.5">
               {quickLinks.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-sm text-slate-400 hover:text-gold-400 transition-colors">
+                  <Link to={l.to} className="text-sm text-cream-100/70 hover:text-gold-400 transition-colors duration-300">
                     {l.label}
                   </Link>
                 </li>
@@ -53,8 +56,8 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
-            <ul className="mt-4 space-y-3 text-sm text-slate-400">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400 font-sans">Contact</h3>
+            <ul className="mt-5 space-y-3.5 text-sm text-cream-100/70">
               <li className="flex items-start gap-3">
                 <svg className="h-5 w-5 mt-0.5 text-gold-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
@@ -79,23 +82,23 @@ export function Footer() {
 
           {/* Social + CTA */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-white">Follow Us</h3>
-            <p className="mt-4 text-sm text-slate-400">Stay connected with the Pushpa School community.</p>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400 font-sans">Follow Us</h3>
+            <p className="mt-5 text-sm text-cream-100/60">Stay connected with the Pushpa School community.</p>
             <div className="mt-4">
               <SocialIcons />
             </div>
             <Link
               to="/admissions"
-              className="mt-6 inline-flex items-center rounded-lg bg-gold-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-gold-600 hover:shadow-md active:scale-95"
+              className="mt-6 inline-flex items-center rounded-full bg-gradient-to-r from-gold-600 to-gold-500 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-gold-700/20 transition-all hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
             >
               Apply for Admission
             </Link>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500">© 2026 {schoolContact.name}. All Rights Reserved.</p>
-          <p className="text-xs text-slate-600">Love and Service · Est. 1966</p>
+        <div className="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-cream-100/50">© 2026 {schoolContact.name}. All Rights Reserved.</p>
+          <p className="text-xs text-cream-100/40 tracking-wider">Love and Service · Est. 1966</p>
         </div>
       </div>
     </footer>
